@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twelth</title>
+</head>
+<body>
+    <input type="number" placeholder="please enter First number" id="num1"><br>
+    <input type="number" placeholder="please  enter second number" id="num2"><br><br>
+    <button id="btn">Largest</button><br><br>
+    <input type="number" placeholder="Resut" id="result">
+    <!-- <p id="result"></p> -->
+    <script>
+        document.getElementById("btn").onclick=largest;
+        function largest(){
+            var a=Number(document.getElementById("num1").value);
+        var b=Number(document.getElementById("num2").value);
+               if(a>b){
+            document.getElementById("result").value=a;
+        }
+        else{
+            document.getElementById("result").value=b;
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="inp">
+        <input type="button" value="add" onclick="myjunaid()">
+        <input type="button" value="Remove" onclick="junaid()">
+        <input type="button" value="clear" onclick="aqib()">
+</form>
+<ul id="list" ></ul>
+<script>
+var geek=[];
+function myjunaid(){
+var a=document.getElementById("inp").value;
+geek.push(a);
+var ouput ="";
+for(var i=0;i<geek.length;i++){
+    ouput+=geek[i]+"<br>";
+}
+document.getElementById("list").innerHTML=ouput;
+}
+function junaid(){
+var a=document.getElementById("inp").value;
+geek.pop(a);
+var ouput ="";
+for(var i=0;i<geek.length;i++){
+    ouput+=geek[i]+"<br>";
+}
+document.getElementById("list").innerHTML=ouput;
+}
+function aqib(){
+    document.getElementById("inp").value="";
+}
+</script>
+</body>
+</html>

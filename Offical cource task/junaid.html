@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Task</title>
+  </head>
+  <body>
+    🏋️‍♀️
+    <script>
+    const mark={
+        fullname:"Mark",
+        mass:78,
+        height: 1.69,
+        calcBMIM: function(){
+            this.BMIM= this.mass/(this.height**2);
+            return this.BMIM;
+        }
+     }
+     const john={
+        fullname:"JOHN",
+        mass:92,
+        height: 1.95,
+        calcBMIJ: function(){
+            this.BMIJ= this.mass/(this.height**2);
+            return this.BMIM;
+        }
+     }
+     john.calcBMIJ();
+    mark.calcBMIM();
+    console.log(mark.BMIM,john.BMIJ);
+            if(mark.BMIM>john.BMIJ){
+                console.log( `${mark.fullname} BMI ${mark.BMIM} is heigher than ${john.BMIJ}`);
+            }
+            else{
+                console.log(`{john.fullname} BMI ${john.BMIJ}} is heigher than ${mark.BMIM}`);
+            }
+    </script>
+  </body>
+</html>

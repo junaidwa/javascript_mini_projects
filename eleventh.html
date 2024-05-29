@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleventh</title>
+</head>
+<body>
+
+    <input type="number" placeholder="please enter number" id="num1"><br>
+    
+ 
+    <button id="btn">Even/odd</button><br><br>
+    
+    <p id="result"></p>
+    <script>
+
+        document.getElementById("btn").onclick=largest;
+        function largest(){
+            var a=Number(document.getElementById("num1").value);
+       
+               if(a%2==0){
+            document.getElementById("result").innerText="The given number is even";
+
+        }
+        else{
+            document.getElementById("result").innerText=  "The given number is odd";
+        }
+        };
+
+       
+
+        
+    </script>
+</body>
+</html>

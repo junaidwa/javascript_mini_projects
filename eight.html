@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eight</title>
+
+    <style>
+        /* #inp:focus{
+            background-color: blue;
+        }
+        #inp:focus{
+            color: wheat;
+        } */
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="inp" placeholder="on focus background color change">
+
+    <script>
+        var a= document.getElementById("inp");
+        a.addEventListener('focus',function(e){
+document.getElementById("inp").style.backgroundColor="blue";
+document.getElementById("inp").style.color="wheat";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator||M.Junaid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <input type="text" id="result" />
+    <br />
+    <br />
+    <button id="zero" onclick="zero()">0</button>
+    <br />
+    <br />
+    <button id="dbzero" onclick="dbzero()">00</button>
+    <br />
+    <br />
+    <button id="first" onclick="first()">1</button>
+    <br />
+    <br />
+    <button id="second" onclick="second()">2</button>
+    <br />
+    <br />
+    <button id="third" onclick="third()">3</button>
+    <br />
+    <br />
+    <button id="fourth" onclick="fourth()">4</button>
+    <br />
+    <br />
+    <button id="fifth" onclick="fifth()">5</button>
+    <br />
+    <br />
+    <button id="sixth" onclick="sixth()">6</button>
+    <br />
+    <br />
+    <button id="seventh" onclick="seventh()">7</button>
+    <br />
+    <br />
+    <button id="eight" onclick="eight()">8</button>
+    <br />
+    <br />
+    <button id="ninth" onclick="ninth()">9</button>
+    <br />
+    <br />
+    <button id="add" onclick="add()">+</button>
+    <button id="subtract" onclick="subtract()">-</button>
+    <button id="multiplication" onclick="multiply()">*</button>
+    <button id="division" onclick="divide()">/</button>
+    <button id="modulus" onclick="modulus()">%</button>
+    <button id="dot" onclick="dot()">.</button>
+    <button id="equal" onclick="junaid.value=eval(junaid.value)">=</button>
+    <button id="AC" onclick="AC()">AC</button>
+    <button id="del" onclick="junaid.value=junaid.value.toString().slice(0,-1)">
+      DEL
+    </button>
+    <!-- <input type="button" value="DEL"  id="del" onclick="junaid.value=junaid.value.toString().slice(0,-1)"> -->
+    <script>
+      var junaid = document.getElementById("result");
+      function zero() {
+        junaid.value += "0";
+      }
+      function dbzero() {
+        document.getElementById("result").value += "00";
+      }
+      function first() {
+        document.getElementById("result").value += "1";
+      }
+      function second() {
+        document.getElementById("result").value += "2";
+      }
+      function third() {
+        document.getElementById("result").value += "3";
+      }
+      function fourth() {
+        document.getElementById("result").value += "4";
+      }
+      function fifth() {
+        document.getElementById("result").value += "5";
+      }
+      function sixth() {
+        document.getElementById("result").value += "6";
+      }
+      function seventh() {
+        document.getElementById("result").value += "7";
+      }
+      function eight() {
+        document.getElementById("result").value += "8";
+      }
+      function ninth() {
+        document.getElementById("result").value += "9";
+      }
+      function add() {
+        document.getElementById("result").value += "+";
+      }
+      function subtract() {
+        document.getElementById("result").value += "-";
+      }
+      function multiply() {
+        document.getElementById("result").value += "*";
+      }
+      function divide() {
+        document.getElementById("result").value += "/";
+      }
+      function modulus() {
+        document.getElementById("result").value += "%";
+      }
+      function AC() {
+        document.getElementById("result").value = " ";
+      }
+      function del() {
+        var del = document.getElementById("result");
+        document.getElementById("result").value += del.value
+          .toString()
+          .slice(0, -1);
+      }
+      function dot() {
+        document.getElementById("result").value += ".";
+      }
+    </script>
+  </body>
+</html>

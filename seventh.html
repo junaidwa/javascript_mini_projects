@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="color-input" placeholder="Enter name of color">
+    <script>
+         var getcolor=  document.getElementById("color-input");
+
+         getcolor.addEventListener('keyup',function(e){
+        //   document.getElementById("color-input")
+        document.body.style.background=e.target.value;
+         });
+    </script>
+</body>
+</html>

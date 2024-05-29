@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.js">
+
+   
+    
+</head>
+<body>
+    <h1>Number 1</h1>
+<input type="number"  id="num1">
+<br>
+<br>
+<h1>Number 2</h1>
+<input type="number"  id="num2">
+<br>
+<br>
+
+Result" <h1 id="Result"  ></h1>
+<button id="addition"  onclick="junaid()">Add </button>
+<script>
+    // var a=prompt("Enter first number");
+    // var b=prompt("Enter second number");
+ 
+    function junaid(){
+        var first =document.getElementById('num1').value;
+    var second =document.getElementById('num2').value;
+    var tot=parseInt(first)+parseInt(second);
+    document.getElementById("Result").innerHTML=tot;
+    // alert(tot);
+    // document.write(<h1>  tot</h1>)
+    }
+  
+ 
+</script>
+
+   
+    
+</body>
+</html>

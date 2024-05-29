@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body  >
+    <button id="btn">Toggling button</button>
+
+    <script>
+        var modebtn=document.getElementById('btn');
+        var currentmode="light";
+        modebtn.addEventListener('click',function(){
+if(currentmode=='light'){
+    currentmode='dark';
+    document.querySelector("body").style.backgroundColor="black";
+}
+else{
+    currentmode='light';
+    document.querySelector("body").style.backgroundColor="red";
+}
+console.log(currentmode);
+
+        });
+    
+       
+    </script>
+    
+</body>
+</html>

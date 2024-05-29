@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="change" onclick="junaid()" >Change color</button> 
+   <button id="first">change inner text</button>
+   <button id="second">change background color of body</button>
+   <button id="third">change background color of body by choice in prompt</button>
+   <script>
+    function junaid(){
+    document.getElementById("change").style.background='red';
+   }
+   document.getElementById("first").onclick=first;
+   function first(){
+    document.getElementById("first").textContent="Muhmmad";
+   }
+   document.getElementById("second").onclick=second;
+   function second(){
+    document.body.style.backgroundColor="green";
+   }
+      
+ document.getElementById("third").onclick=third;
+ function third(){
+   var color= prompt("please enter colo to background color of body");
+    document.body.style.backgroundColor=color;
+ }
+// document.body.style.backgroundColor=color;
+   
+   </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+h1{
+    font-size: 100px;
+    margin-left: 33%;
+}
+.clickable{
+    height: 120px;
+    width: 120px;
+    margin-left: 90px;
+    margin-top: 100px;
+    border: 8px solid #444C41;
+    border-radius: 16px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    -webkit-text-stroke: 4px  black;
+
+}
+#one{
+    margin-left: 230px;
+    background-image: url("tom1.png");
+    background-position: cover;
+    background-repeat: no-repeat; 
+}
+#two{
+    background-image: url("crash.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+#three{
+    background-image: url("kick.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+#fourth{
+    background-image: url("tom1.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+#fifth{
+    background-image: url("tom2.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+#six{
+    background-image: url("tom3.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+

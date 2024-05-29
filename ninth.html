@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .password{
+            display: inline-block;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .password input{
+            padding: 10px 5px;
+            outline: none;
+            border: 0;
+        }
+       .pass-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="password">
+            <input type="password" placeholder="password" id="password">
+            <img src="first.jpeg" alt="logo"  onclick="pass()" class="pass-icon" height="20px" width="20px">
+        </div>
+    </form>
+    <script>
+        var a;
+        function pass(){
+            if(a==1){
+                document.getElementById("password").type='password';
+                document.getElementById("pass-icon").scr='first.jpeg';
+                a=0;
+            }
+            else{
+
+                document.getElementById("password").type='text';
+                document.getElementById("pass-icon").scr='first.jpeg';
+                a=1;
+            }
+        }
+    </script>
+</body>
+</html>

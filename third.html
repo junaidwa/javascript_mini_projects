@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number 1</h1>
+    <input type="Number"id="first">
+    <h1>Number 2</h1>
+    <input type="Number"id="second">
+    <br>
+    <button id="Addition"> Addition</button>
+    Result:   <h1 id="Result 1" ></h1>
+    <br>
+    <button id="subtraction">Subtraction</button>
+    Result: <h1 id="Result 2" ></h1>
+    <br>
+      <button id="multiplication"> multiplication</button>
+      Result: <h1 id="Result 3" ></h1>
+      <br>
+      <button id="division">Division</button>
+      Result: <h1 id="Result 4" ></h1>
+
+
+      <script>
+        document.getElementById("Addition").onclick=addition;
+        function addition(){
+            var a=document.getElementById("first").value;
+            var b=document.getElementById("second").value;
+            var total=parseFloat(a)+ parseFloat(b);
+            document.getElementById("Result 1").innerText=total;
+        }
+        document.getElementById("subtraction").onclick=subtraction;
+        function subtraction(){
+            var a=document.getElementById("first").value;
+            var b=document.getElementById("second").value;
+            var total=parseFloat(a)- parseFloat(b);
+            document.getElementById("Result 2").innerText=total;
+        }
+        document.getElementById("multiplication").onclick=multiplication;
+        function multiplication(){
+            var a=document.getElementById("first").value;
+            var b=document.getElementById("second").value;
+            var total=parseFloat(a)* parseFloat(b);
+            document.getElementById("Result 3").innerText=total;
+        }
+        document.getElementById("division").onclick=division;
+        function division(){
+            var a=document.getElementById("first").value;
+            var b=document.getElementById("second").value;
+            var total=parseFloat(a)/parseFloat(b);
+            document.getElementById("Result 4").innerText=total;
+        }
+      </script>
+</body>
+</html>
