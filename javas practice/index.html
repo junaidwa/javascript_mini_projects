@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <style>
+    #first{
+      height: 300px;
+      width: 300px;
+      border: 3px solid red;
+      overflow: auto;
+     
+    }
+  </style>
+</head>
+<body>
+  <input type="password" name="password" id="junaid">
+  <select name="" id="junaid1">
+    <option value="">junsid</option>
+    <option value="">anis bhai</option>
+    <option value="">aqib</option>
+  </select>
+  <button class="btn">junaid wattoo</button>
+<!-- <div id="first" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quidem odio, earum ut reiciendis quis, cumque porro doloribus perferendis iusto, corporis sapiente cupiditate eligendi vitae temporibus hic? Rerum ullam doloribus odio accusantium vel temporibus deleniti officia eos repudiandae aliquam suscipit, eius voluptate officiis sit pariatur quo est consectetur sint saepe dolore ipsum dolorum eaque. Blanditiis animi quidem asperiores corrupti at distinctio perspiciatis vitae facilis consectetur velit unde est provident aliquid architecto error alias quis deleniti, dicta nobis iste consequuntur similique! Perferendis debitis minima in est eius officia atque nulla iure quaerat quibusdam nihil laborum explicabo culpa perspiciatis corrupti dignissimos, quia, laudantium mollitia at nisi, minus similique fuga illo commos placeat harum voluptatibus totam soluta fuga aspernatur unde qui deserunt voluptates neque iste nulla modi! Repellat mollitia placeat voluptatem et id perferendis officia accusamus quae ratione debitis! Consectetur totam aut quisquam, natus possimus nu dolore debitis quia nobis distinctio eos molestiae ratione accusantium perspiciatis qui maxime! Aspernatur ex blanditiis, illum odit fugit dignissimos soluta earum numquam temporibus doloremque! Quidem magni id aliquid asperiores. Cupiditate, iusto.</div> -->
+<script>
+$(document).ready(function(){
+  $("#junaid").focus(function(){
+$("body").css("background-color","yellow");
+});
+$("#junaid").blur(function(){
+$("body").css("background-color","red");
+});
+$("#junaid1").change(function(){
+$("body").css("background-color","green");
+});
+// $(".btn").click(function(){
+//    var a= $("#junaid").html();
+//   console.log(a);
+//   });
+$(".btn").click(function(){
+$(".btn").html("<b>Allah</b>");
+});
+});
+
+</script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <input type="text" placeholder="Enter text">
+    <input type="button" id="btn" value="ADD Task">
+    <ul>
+        <li>JUNAID <button class="delete">Delete</button></li>
+        <li>Aqib   <button class="delete">Delete</button></li>
+    </ul>
+    <script>
+        var btns=document.querySelector("#btn");
+        var ul=document.querySelector("ul");
+        var lists=document.querySelectorAll("li");
+        var inp=document.querySelector("input");
+        btns.addEventListener('click', function(){
+            let items=document.createElement("li");
+            items.innerText=inp.value;
+            let delbtn=document.createElement("button");
+            delbtn.innerText="delete";
+            delbtn.classList.add("delete");
+            items.appendChild(delbtn);
+            ul.appendChild(items);
+            inp.value="";
+             // console.log("Button was clicked !");
+
+        });
+        let btnsdel=document.querySelectorAll(".delete");
+        for( let delbtn of btnsdel){
+            delbtn.addEventListener('click', function(){
+                var par=this.parentElement;
+                // par.remove();
+                // console.log(par);
+                console.log("Dleete button clicked");
+            })
+        }
+
+
+    </script>
+    
+</body>
+</html>
