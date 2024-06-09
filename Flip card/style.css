@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #ddd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-content {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  }
+  
+  /* .box:hover  .box-content {
+    transform: rotateY(180deg);
+  }  */
+    .junaid{
+      transform: rotateY(180deg);
+    }
+.box-front, .box-back{
+  width: 300px;
+  height: 300px;
+  color: white;
+  padding: 30px;
+  position: absolute;
+  padding: 30px;
+  backface-visibility: hidden;
+} 
+.box-front{
+  background-color: silver;
+}
+.box-back{
+  background-color: yellowgreen;
+  transform: rotatweY(180deg);
+}

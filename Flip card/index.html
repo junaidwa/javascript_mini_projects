@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-front">
+                <p>Muhammad Junaid</p>
+                <h3>UET Taxila</h3>
+                <button class="fbtn" onclick="goback()">Back</button>
+                
+                </div>
+                    <div class="box-back">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, porro unde accusamus ullam architecto maiores ratione pariatur, officia libero ad quasi aliquam dolorem eius fugiat alias distinctio velit voluptates obcaecati?<p>
+                            <button class="bbtn" onclick="gofront()">Front</button>
+                            <div>
+        </div>
+    </div>
+
+    <script>
+        let frontbtn=document.querySelector(".fbtn");
+        let backbtn=document.querySelector(".bbtn");
+        let mainbox=document.querySelector(".box");
+        let boxcon=document.querySelector(".box-content");
+
+        function goback(){
+            boxcon.classList.add("junaid");
+        }
+        function gofront(){
+            boxcon.classList.remove("junaid");
+        }
+
+    </script>
+
+    
+</body>
+</html>
