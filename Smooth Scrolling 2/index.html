@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Scrolling</title>
+    <style>
+      .section-1 {
+        height: 100vh;
+        width: 100%;
+        border: 2px solid black;
+      }
+      .section-2 {
+        height: 100vh;
+        width: 100%;
+        border: 2px solid pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #btn{
+        margin-top: 400px;
+      }
+      .selected {
+        height: 300px;
+        width: 400px;
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-1">
+      <h1>Seciont 1</h1>
+      <button id="btn">Learn More</button>
+    </div>
+    <div class="section-2">
+      <h1>Seciont 2</h1>
+      <div class="selected">
+        <h1>This is a selected div where we scroll</h1>
+      </div>
+    </div>
+    <script>
+        const btnModel = document.querySelector("#btn");
+       const sectionTwo = document.querySelector(".section-2");
+
+       btnModel.addEventListener('click',(e)=>{
+        // sectionTwo.scrollIntoView({behavior:'smooth'}) //It's work fine .It's a modern way of scrooling
+
+       const sectionCords = sectionTwo.getBoundingClientRect();
+       console.log("Data of section selected relative to viewPorts");
+       console.log(sectionCords);
+       console.log("Current Scrooling");
+    console.log(window.scrollX,window.scrollY);
+
+
+    sectionTwo.scrollIntoView({left : window.screenX+sectionCords.left, top:window.screenY+sectionCords.top,behavior:'smooth'});
+       })
+
+    </script>
+  </body>
+</html>
